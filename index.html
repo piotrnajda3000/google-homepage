@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google</title> 
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./static/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <style>
+
+            body {
+                font-family: "Roboto", sans-serif;
+            }
+
+            nav {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            nav ul {
+                display: flex;
+                list-style: none;
+                margin: 0;
+                padding: 15px 10px;
+                align-items: center;
+            }
+
+            nav ul li {
+                padding: 0px 7px;
+                font-size: 14px;
+            }
+
+            #profile-picture {
+                border-radius: 50%;
+            }
+
+            #logo {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 333px;
+                margin: auto;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                margin: 0 auto;
+                top: 0;
+                left: 0;
+                bottom: 133px;
+                right: 0;
+            }
+
+            input {
+                width: 444px;
+                height: 39px;
+                border-radius: 22px;
+                border: 1px solid lightgray;
+                margin-top: 66px;
+            }
+
+            #search-icons {
+                width: 444px;
+                height: 39px;
+                display: flex;
+                position: relative;
+                flex-direction: row;
+                width: 444px;
+                height: 39px;
+                bottom: 30px;
+                justify-content: space-between;
+                background-color:transparent;
+            }
+
+            #search-icons img {
+                width: 24px;
+                height: 24px;
+            }
+
+            #search-buttons button {
+                margin: 2px;
+                padding: 10px;
+                background-color: rgb(245, 245, 245);
+                border: 0;
+                border-radius: 5px;
+                font-size: 14px;
+            }
+
+            span.transparency {
+                display: inline-flex;
+                align-items: center;
+                opacity: 0.77;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <nav>
+            <ul>
+                <span class="transparency">
+                    <li>About</li>
+                    <li>Store</li> 
+                </span>
+            </ul>
+            <ul>
+                <span class="transparency">
+                    <li>Gmail</li>
+                    <li>Images</li>
+                    <li><a href="#"><img src="./static/apps.png"></a></li>
+                </span>
+                <li><a href="#"><img src="./static/profile-picture.jpg" id="profile-picture"></a></li>
+            </ul>
+        </nav>
+ 
+        <img src="./static/logo-272x92.png" alt="Google logo" id="logo">
+
+        <form action="https://www.google.com/search" method="get" id="search">
+            
+            <input name="q" type="search">
+            
+            <span id="search-icons">
+                <img src="./static/search.png">
+                <img src="./static/microphone.png">
+            </span>
+
+            <span id="search-buttons">
+                <button type="submit"><span class="transparency">Google Search</span></button>
+                <a href="https://www.google.com/doodles"><button><span class="transparency">I'm feeling lucky</span></button></a>
+            </span>
+        </form>
+
+    </body>
+
+</html>
