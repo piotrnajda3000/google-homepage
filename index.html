@@ -6,6 +6,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./static/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     </head>
     <body>
@@ -18,29 +19,46 @@
             <ul>
                 <li>Gmail</li>
                 <li>Images</li>
-                <li><a href="#"><img src="./static/apps.png" class="icon"></a></li>
+                <li><span class="material-icons">apps</span></li>
                 <li><a href="#"><img src="./static/profile-picture.jpg" id="profile-picture"></a></li>
             </ul>
         </nav>
  
-        <img src="./static/logo-272x92.png" alt="Google" id="logo">
+        <div id="content">
 
-        <form action="https://www.google.com/search" method="get" id="search">
-            
-            <div id="search-bar">
-        
-                <img src="./static/search.png" class="icon">
-                <input name="q" type="search" id="search">
-                <img src="./static/microphone.png" class="icon">
+            <img src="./static/Google_2015_logo.png" alt="Google" id="logo">
 
-            </div>
-            <span id="search-buttons">
-                <button type="submit">Google Search</button>
-                <a href="https://www.google.com/doodles"><button>I'm feeling lucky</button></a>
-            </span>
-        </form>
+            <form action="https://www.google.com/search" autocomplete="off"  method="get">
+
+                <div id="search-bar">
+                    <span class="material-icons">search</span>
+                    <input name="q" type="text" tabindex="0">
+                    <span class="material-icons">mic</span>
+                </div>
+
+                <div id="search-buttons">
+                    <button type="submit">Google Search</button>
+                    <a href="https://www.google.com/doodles"><button>I'm feeling lucky</button></a>
+                </div>
+
+            </form>
+
+        </div>
+
+
 
         <footer>
+            <ul>
+                <li>About</li>
+                <li>Advertisting</li>
+                <li>Business</li>
+                <li>How Search Works</li>
+            </ul>
+            <ul>
+                <li>Privacy</li>
+                <li>Terms</li>
+                <li>Settings</li>
+            </ul>
             
         </footer>
 
