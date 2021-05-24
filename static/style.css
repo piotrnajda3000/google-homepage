@@ -82,16 +82,11 @@ input, input:focus {
     box-shadow: 0 1px 6px #e88bde;
 }
 
-#search-buttons {
-    position: relative;
-    top: 1.2vw;
-}
-
 button {
     border-radius: 5px;
     padding: 10px;
     border: 0;
-    margin: 11px 1px !important;
+    margin: 27px 1px !important;
     background-color: hsla(306, 67%, 90%, 0.15);
     color:hsla(306, 67%, 73%, 0.6);
 }
@@ -100,6 +95,9 @@ button {
     footer {
         flex-direction: column-reverse;
         align-items: center;
+        font-size: 12px;
+    }
+    nav {
         font-size: 12px;
     }
 }
