@@ -35,9 +35,9 @@ li {
 }
 
 #logo {
-    
-    max-height: 92px;
-    max-width: 272px;
+    width: 272px;
+    height: 92px;
+    opacity: 0.5;
 }
 
 form {
