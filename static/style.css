@@ -3,6 +3,7 @@ body, button, a {
     color: hsla(306, 67%, 73%, 0.6);
     font-size: 14px;
     text-decoration: none;
+    
 }
 
 a:hover {
@@ -34,12 +35,15 @@ li {
 }
 
 #content {
-    display: flex; 
-    flex-direction: column; 
+
+    position: absolute;
+    top: 36%;
+    transform: translateY(-50%);
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    position: relative;
-    top: 10vw;
 }
 
 #logo {
@@ -49,12 +53,13 @@ li {
 }
 
 form {
-    width: min(90%, 566px);
+    width: min(100%, 566px);
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 11px;
 }
+
 #search-bar {
     display: flex;
     align-items: center;
