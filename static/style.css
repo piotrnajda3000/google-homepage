@@ -35,12 +35,10 @@ li {
 }
 
 #content {
-
     position: absolute;
     top: 36%;
     transform: translateY(-50%);
     width: 100%;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,6 +96,13 @@ button {
     color:hsla(306, 67%, 73%, 0.6);
 }
 
+@media (max-width: 667px) {
+    footer {
+        flex-direction: column-reverse;
+        align-items: center;
+        font-size: 12px;
+    }
+}
 
 footer {
     position: fixed;
