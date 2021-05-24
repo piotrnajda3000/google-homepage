@@ -7,8 +7,7 @@
         <link rel="stylesheet" href="./static/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    </head>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <body>
 
         <nav>
@@ -20,7 +19,7 @@
                 <li>Gmail</li>
                 <li>Images</li>
                 <li><span class="material-icons">apps</span></li>
-                <li><a href="#"><img src="./static/profile-picture.jpg" id="profile-picture"></a></li>
+                <li><a href="#"><img src="./static/profile-picture.jpg" id="profile-picture" alt="Profile picture"></a></li>
             </ul>
         </nav>
  
@@ -28,24 +27,22 @@
 
             <img src="./static/Google_2015_logo_v3.svg" alt="Google" id="logo">
 
-            <form action="https://www.google.com/search" autocomplete="off"  method="get">
+            <form action="#" autocomplete="off">
 
                 <div id="search-bar">
                     <span class="material-icons">search</span>
-                    <input name="q" type="text" tabindex="0">
+                    <input type="text" tabindex="0">
                     <span class="material-icons">mic</span>
                 </div>
 
                 <div id="search-buttons">
-                    <button type="submit">Google Search</button>
+                    <button type="submit"><a href="./searches.html">Google Search</a></button>
                     <a href="https://www.google.com/doodles"><button>I'm feeling lucky</button></a>
                 </div>
 
             </form>
 
         </div>
-
-
 
         <footer>
             <ul>

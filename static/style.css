@@ -1,12 +1,18 @@
-body, button {
+body, button, a {
     font-family: "Roboto", sans-serif;
     color: hsla(306, 67%, 73%, 0.6);
     font-size: 14px;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: default;
 }
 
 nav, footer {
     display: flex;
     justify-content: space-between;
+    overflow-x: auto;
 }
 
 nav ul, footer ul {
@@ -14,11 +20,13 @@ nav ul, footer ul {
     align-items: center;
     margin: 0;
     padding: 15px 10px;
+ 
 }
 
 li {
     list-style: none;
     padding: 0px 7px;
+    white-space: nowrap;
 }
 
 #profile-picture {
@@ -41,7 +49,7 @@ li {
 }
 
 form {
-    width: 566px;
+    width: min(90%, 566px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,13 +59,12 @@ form {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 566px;
+    width: min(90%, 566px);
     height: 44px;
     border-radius: 22px;
     border: 1px solid hsla(306, 67%, 93%, 1);;
     padding: 0 10px;
 }
-
 
 input, input:focus {
     height: 90%;
@@ -81,7 +88,7 @@ button {
     border-radius: 5px;
     padding: 10px;
     border: 0;
-    margin: 0 1px !important;
+    margin: 11px 1px !important;
     background-color: hsla(306, 67%, 90%, 0.15);
     color:hsla(306, 67%, 73%, 0.6);
 }
@@ -90,8 +97,6 @@ button {
 footer {
     position: fixed;
     bottom: 0;
-    width: 100%;
-    height: 55px;
+    width: 100vw;
     background-color: hsla(306, 67%, 73%, 0.15);
 }
-
