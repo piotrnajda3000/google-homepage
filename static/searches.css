@@ -6,6 +6,11 @@ body, button, a {
     cursor: default;
 }
 
+body, html {
+    width: 100vw;
+    height: 100vh;
+}
+
 
 ul {
     padding: 0;
@@ -20,13 +25,19 @@ li {
 }
 
 
+#first-column {
+    display: flex;
+    flex-direction: column;
+}
+
 /* First row */ 
 
 #first-row {
+    width: 100vw;
     display: flex;
     align-items: center;
-    width: 100%;
     margin-top: 4vh;
+    flex-grow: 1;
 }
 
 #logo {
@@ -35,21 +46,27 @@ li {
     opacity: 0.7;
     display: flex;
     align-items: center;
-    margin-left: 2vw;
-    margin-right: 3vw;
+    margin-left: 28px;
+    margin-right: 41px;
 }
 
 /* Search bar */ 
 
-#search {
+form {
     width: max(692px, 350px);
+    margin-right: 41px;
+    flex-shrink: 2;
+}
+
+#search {
+
     height: 44px;
     border-radius: 22px;
     border: 1px solid hsla(306, 67%, 93%, 1);;
     display: grid;
     grid: 
         ". input icon icon-two ." 100%
-        / 5px minmax(300px, 692px) 25px 25px 0;
+        / 5px minmax(350px, 692px) 25px 25px 0;
     align-items: center;
     column-gap: 15px;
 }
@@ -82,7 +99,7 @@ input, input:focus {
     display: flex;
     align-items: center;
     margin-left: auto;
-    margin-right: 1.5vw;
+    margin-right: 21px;
 }
 
 #right li {
@@ -97,8 +114,8 @@ input, input:focus {
 /* Second row + it's bottom border */ 
 
 #border-wrapper {
-    display: block; 
-    flex-basis: 100%;
+    display: flex; 
+    width: 100vw;
     border-bottom: 1px solid hsla(306, 67%, 93%, 1);
     padding-bottom: 2vh;
 }
@@ -109,7 +126,6 @@ input, input:focus {
     margin-top: 3vh;
     justify-content: space-between;
     flex-flow: row nowrap;
-    width: max(650px, 350px);
 }
 
 #options ul {
@@ -122,24 +138,21 @@ input, input:focus {
 #third-row {
     margin-top: 2vh;
     margin-left: 183px;
+    margin-bottom: 2vh;
 }
 
-#menu {
-    margin-top: 3.5vh;
-    margin-left: 11px;
-    grid-area: options;
-    display: grid;
-    grid: 
-    "menu-main . menu-misc"
-    / min-content auto min-content; 
+/* Search results */ 
+
+#wrapper-2 {
+    margin-left: 183px;
+
 }
 
-#menu-main {
-    grid-area: menu-main;
-    display: flex;
+#people-also ul li {
+    padding: 0;
+    margin: 0;
 }
 
-#menu-misc {
-    grid-area: menu-misc;
-    display: flex;
+#people-also ul {
+    display: block;
 }
