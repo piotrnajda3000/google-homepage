@@ -79,7 +79,6 @@ input, input:focus {
 #right {
     display: flex;
     align-items: center;
-
     margin-left: auto;
     margin-right: 1.5vw;
 }
@@ -90,24 +89,26 @@ input, input:focus {
 
 /* Second row */ 
 
+#hr {
+    display: flex; 
+    flex-basis: 100%;
+}
+
 #second-row {
     display: flex;
     margin-left: 176px;
     margin-top: 16px;
-    justify-content: space-betwen;
+    justify-content: space-between;
     flex-flow: row nowrap;
     width: max(650px, 350px);
 }
 
-#options {
-    display: flex;
-    flex-basis: 100%;
-    justify-content: space-between;
-}
-
 #options ul {
     display: inline-block;
+    box-sizing: border-box;
 }
+
+/* Third row */
 
 #menu {
     margin-top: 3.5vh;
