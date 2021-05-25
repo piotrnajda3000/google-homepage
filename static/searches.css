@@ -119,6 +119,11 @@ input, input:focus {
 
 /* Third row */
 
+#third-row {
+    margin-top: 2vh;
+    margin-left: 183px;
+}
+
 #menu {
     margin-top: 3.5vh;
     margin-left: 11px;
