@@ -1,40 +1,43 @@
-
-body, button{
+body, button, a {
     font-family: "Roboto", sans-serif;
     color: hsla(306, 67%, 73%, 0.6);
     font-size: 14px;
-
-}
-
-a {
     text-decoration: none;
     cursor: default;
 }
 
-
-header {
+body {
     display: grid;
-    grid-template-areas: 
-    ". . . . . ."
-    ". logo form . misc ."
+    grid: 5vh / 100%;
+}
+
+header {  
+    grid-area: 2; 
+    display: grid;
+    grid: 
+    ". logo form . misc ." 
     ". . options . . ."
     "hr hr hr hr hr hr"
     ". . sr . . ."
-    ". . results . . .";
-    grid-template-columns: 1.5vw min-content min-content auto min-content 1.5vw;
-    grid-template-rows: 1.5vw auto;
+    / 1.5vw min-content min-content auto min-content 1.5vw;
+
     align-items: center;
 }
 
-#results {
-    grid-area: results;
-    background-color: gray;
-    height: 100vh;
+header a, #logo {
+    margin-right: 2vw;
+    width: 92px;
+    height: 30px;
+    opacity: 0.5;
+    grid-area: logo; 
+}
 
+#results {
+    grid-area: 3;
+    background-color: gray;
 }
 
 .indent {
-
     margin-top: 16px;
     margin-left: 18px;
 }
@@ -60,9 +63,9 @@ header {
     margin-left: 11px;
     grid-area: options;
     display: grid;
-    grid-template-areas: 
-    "options-one . miscoptions";
-    grid-template-columns: min-content auto min-content;
+    grid: 
+    "options-one . miscoptions"
+    / min-content auto min-content; 
 }
 
 
@@ -74,14 +77,6 @@ header {
 #options-one {
     grid-area: options-one;
     display: flex;
-}
-
-header a, #logo {
-    margin-right: 2vw;
-    width: 92px;
-    height: 30px;
-    opacity: 0.5;
-    grid-area: logo; 
 }
 
 #form {
@@ -102,10 +97,9 @@ header a, #logo {
     border-radius: 22px;
     border: 1px solid hsla(306, 67%, 93%, 1);;
     display: grid;
-    grid-template-columns: 5px minmax(300px, 692px) 25px 25px 0px;
-    grid-template-rows: 100%;
-    grid-template-areas: 
-        ". search-bar icon icon-two ."; 
+    grid: 
+        ". search-bar icon icon-two ." 100%
+        / 5px minmax(300px, 692px) 25px 25px 0;
     align-items: center;
     column-gap: 15px;
 }
@@ -129,9 +123,10 @@ ul {
     margin: 0;
 }
 
-#misc  {
+ul#misc {
     grid-area: misc;
     display: flex;
+
 }
 
 li {
