@@ -1,0 +1,147 @@
+
+body, button{
+    font-family: "Roboto", sans-serif;
+    color: hsla(306, 67%, 73%, 0.6);
+    font-size: 14px;
+
+}
+
+a {
+    text-decoration: none;
+    cursor: default;
+}
+
+
+header {
+    display: grid;
+    grid-template-areas: 
+    ". . . . . ."
+    ". logo form . misc ."
+    ". . options . . ."
+    "hr hr hr hr hr hr"
+    ". . sr . . ."
+    ". . results . . .";
+    grid-template-columns: 1.5vw min-content min-content auto min-content 1.5vw;
+    grid-template-rows: 1.5vw auto;
+    align-items: center;
+}
+
+#results {
+    grid-area: results;
+    background-color: gray;
+    height: 100vh;
+
+}
+
+.indent {
+
+    margin-top: 16px;
+    margin-left: 18px;
+}
+
+#sr {
+    grid-area: sr;
+}
+
+#hr {
+    grid-area: hr;
+    height: 1px;
+}
+
+#hr hr{
+    background-color: hsla(306, 67%, 93%, 1);
+    border: 0 none;
+    color: hsla(306, 67%, 93%, 1);
+    height: 1px;
+}
+
+#options {
+    margin-top: 3.5vh;
+    margin-left: 11px;
+    grid-area: options;
+    display: grid;
+    grid-template-areas: 
+    "options-one . miscoptions";
+    grid-template-columns: min-content auto min-content;
+}
+
+
+#miscoptions {
+    grid-area: miscoptions;
+    display: flex;
+}
+
+#options-one {
+    grid-area: options-one;
+    display: flex;
+}
+
+header a, #logo {
+    margin-right: 2vw;
+    width: 92px;
+    height: 30px;
+    opacity: 0.5;
+    grid-area: logo; 
+}
+
+#form {
+    grid-area: form;
+}
+
+#mic {
+    grid-area: icon;
+}
+
+#search {
+    grid-area: icon-two;
+}
+
+#search-bar {
+    width: max(692px, 350px);
+    height: 44px;
+    border-radius: 22px;
+    border: 1px solid hsla(306, 67%, 93%, 1);;
+    display: grid;
+    grid-template-columns: 5px minmax(300px, 692px) 25px 25px 0px;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+        ". search-bar icon icon-two ."; 
+    align-items: center;
+    column-gap: 15px;
+}
+
+input, input:focus {
+    grid-area: search-bar;
+    border-radius: 22px;
+    height: 95%;
+    z-index: 1;
+    border: 0;
+    outline: none;
+    color: hsla(306, 67%, 73%, 0.6);
+}
+
+#search-bar:hover {
+    box-shadow: 0 1px 6px #e88bde;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+#misc  {
+    grid-area: misc;
+    display: flex;
+}
+
+li {
+    display: inline;
+    list-style: none;
+    white-space: nowrap;
+    padding: 0px 7px;
+}
+
+#profile-picture {
+    border-radius: 50%;
+}
+
