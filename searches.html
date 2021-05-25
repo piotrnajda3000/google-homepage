@@ -10,19 +10,26 @@
         <meta name="viewport" content="initial-scale=1.0, width=device-width">
     </head>
     <body> 
-        <header>
+
+        <div id="first-row">
+            <!--Left-->
             <a href="./index.html"><img src="./static/Google_2015_logo_v3.svg" alt="Google" id="logo"></a>
-            <form action="#" autocomplete="off" id="form">
-                <div id="search-bar">
-                    <input type="text" tabindex="0">
+            <form action="#" autocomplete="off">
+                <div id="search">
+                    <input type="text" tabindex="0" id="input">
                     <span class="material-icons" id="mic">mic</span>
-                    <span class="material-icons" id="search">search</span>
+                    <span class="material-icons" id="search-icon">search</span>
                 </div>
             </form>
-            <ul id="misc">
+            <!--Right-->
+            <ul id="right">
                 <li><span class="material-icons">apps</span></li>
                 <li><a href="#" style="opacity:1.0;" ><img src="./static/profile-picture.jpg" id="profile-picture" alt="Profile picture"></a></li>
             </ul>
+        </div>
+
+        <div id="second-row">
+            
             <div id="options">
                 <ul id="options-one">
                     <li>All</li>
@@ -31,19 +38,17 @@
                     <li>Maps</li>
                     <li>Images</li>
                     <li>More</li>
-                </ul>
-                <ul id="miscoptions">
-                    <li>Settings</li>
-                    <li>Tools</li>
+                    <span id="miscoptions">
+                        <li>Settings</li>
+                        <li>Tools</li>
+                    </span>
+                    
                 </ul>
             </div>
-            <div id="hr">
-                <hr>
-            </div>
-            <p id="sr" class="indent">About 260,000,000 results (0.87 seconds)</p>
-        </header>
-        <section id="results">  
-            test
-        </section>
+
+        </div>
+
+          
+
     </body>
 </html>
