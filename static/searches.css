@@ -92,10 +92,21 @@ input, input:focus {
 
 #second-row {
     display: flex;
-    margin-left: 175px;
+    margin-left: 176px;
     margin-top: 16px;
     justify-content: space-betwen;
     flex-flow: row nowrap;
+    width: max(650px, 350px);
+}
+
+#options {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+}
+
+#options ul {
+    display: inline-block;
 }
 
 #menu {
